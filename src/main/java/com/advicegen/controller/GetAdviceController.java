@@ -22,10 +22,10 @@ public class GetAdviceController {
     GetAdvice getAdvice;
 
     @PostMapping("/getAdvice")
-    public ResponseEntity<String> getAdviceContro(@RequestBody String accountNumbr)
+    public ResponseEntity<AdviceDet> getAdviceContro(@RequestParam("accountNumbr") String accountNumbr)
     {
         System.out.println("I am in Controller class ");
-        String adviceDet = getAdvice.getAdviceDet(accountNumbr);
+        AdviceDet adviceDet = getAdvice.getAdviceDet(accountNumbr);
         return new ResponseEntity<>(adviceDet, HttpStatus.FOUND);
     }
 }

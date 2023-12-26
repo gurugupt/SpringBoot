@@ -23,10 +23,9 @@ public class GetAdviceImpl implements GetAdvice{
 
 
     @Override
-    public String getAdviceDet(String accntNum) {
+    public AdviceDet getAdviceDet(String accntNum) {
 
-
-        String adviceDet = adviceExtract.findbyAccnt(accntNum);
+        AdviceDet adviceDet = adviceExtract.findbyAccnt(accntNum);
 
         System.out.println(" i am in service class ");
 

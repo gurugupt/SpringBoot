@@ -4,6 +4,6 @@ import com.advicegen.entity.AdviceDet;
 
 public interface GetAdvice {
 
-        public String getAdviceDet(String accntNum);
+        public AdviceDet getAdviceDet(String accntNum);
 
 }
